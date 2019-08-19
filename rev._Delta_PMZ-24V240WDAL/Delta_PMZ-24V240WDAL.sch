@@ -1,0 +1,763 @@
+EESchema Schematic File Version 4
+LIBS:Delta_PMZ-24V240WDAL-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Delta PMZ-24V240WDAL"
+Date "2019-08-14"
+Rev "A"
+Comp "Prusa Research"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line width 8 style solid
+	3850 2100 3850 3150
+Wire Notes Line width 8 style solid
+	3850 3150 5150 3150
+Wire Notes Line width 8 style solid
+	5150 3150 5150 2100
+Wire Notes Line width 8 style solid
+	5150 2100 3850 2100
+Text Notes 4200 2700 0    79   ~ 0
+EMI FILTER
+Wire Notes Line width 8 style solid
+	5600 2100 5600 3150
+Wire Notes Line width 8 style solid
+	5600 3150 6900 3150
+Wire Notes Line width 8 style solid
+	6900 3150 6900 2100
+Wire Notes Line width 8 style solid
+	6900 2100 5600 2100
+Text Notes 5700 2850 0    79   ~ 0
+INRUSH CURRENT\nLIMITER\n&\nBRIDGE RECTIFIER
+Wire Notes Line width 8 style solid
+	7350 3150 8650 3150
+Wire Notes Line width 8 style solid
+	8650 3150 8650 2100
+Wire Notes Line width 8 style solid
+	8650 2100 7350 2100
+Text Notes 7650 2750 0    79   ~ 0
+PFC BOOST\nCONVERTER
+Wire Notes Line width 8 style solid
+	9100 2100 9100 3150
+Wire Notes Line width 8 style solid
+	9100 3150 10400 3150
+Wire Notes Line width 8 style solid
+	10400 3150 10400 2100
+Wire Notes Line width 8 style solid
+	10400 2100 9100 2100
+Text Notes 9450 2450 0    79   ~ 0
+DC/DC\nCONVERTER
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:Transformer_1P_1S-Device T?
+U 1 1 5D93E934
+P 9750 2850
+F 0 "T?" H 9750 3139 50  0001 C CNN
+F 1 "Transformer_1P_1S" H 9750 3140 50  0001 C CNN
+F 2 "" H 9750 2850 50  0001 C CNN
+F 3 "~" H 9750 2850 50  0001 C CNN
+	1    9750 2850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 8 style solid
+	7350 4100 7350 5150
+Wire Notes Line width 8 style solid
+	7350 5150 8650 5150
+Wire Notes Line width 8 style solid
+	8650 5150 8650 4100
+Wire Notes Line width 8 style solid
+	8650 4100 7350 4100
+Text Notes 7600 4700 0    79   ~ 0
+PFC CONTROL
+Wire Notes Line width 8 style solid
+	9100 3600 9100 5900
+Wire Notes Line width 8 style solid
+	9100 5900 10400 5900
+Wire Notes Line width 8 style solid
+	10400 5900 10400 3600
+Wire Notes Line width 8 style solid
+	10400 3600 9100 3600
+Text Notes 9350 5150 0    79   ~ 0
+PWM CONTROL\n&\nOVER CURRENT\nPROTECTION\n&\nOVER TEMP\nPROTECTION
+Wire Notes Line width 8 style solid
+	10850 2100 10850 3150
+Wire Notes Line width 8 style solid
+	10850 3150 12150 3150
+Wire Notes Line width 8 style solid
+	12150 3150 12150 2100
+Wire Notes Line width 8 style solid
+	12150 2100 10850 2100
+Text Notes 11250 2850 0    79   ~ 0
+OUTPUT\nRECTIFIER\n&\nFILTER
+Wire Notes Line width 8 style solid
+	10850 3600 10850 5900
+Wire Notes Line width 8 style solid
+	10850 5900 12150 5900
+Wire Notes Line width 8 style solid
+	12150 5900 12150 3600
+Wire Notes Line width 8 style solid
+	12150 3600 10850 3600
+Text Notes 11050 4450 0    79   ~ 0
+PHOTO COUPLER\n&\nFEEDBACK\nCONTROL
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:SFH617A-1-Isolator U?
+U 1 1 5D941556
+P 11500 5250
+F 0 "U?" H 11500 5483 50  0001 C CNN
+F 1 "SFH617A-1" H 11500 5484 50  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 11300 5050 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 11500 5250 50  0001 L CNN
+	1    11500 5250
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line width 8 style solid
+	10850 6350 10850 7400
+Wire Notes Line width 8 style solid
+	10850 7400 12150 7400
+Wire Notes Line width 8 style solid
+	12150 7400 12150 6350
+Wire Notes Line width 8 style solid
+	12150 6350 10850 6350
+Text Notes 11100 6700 0    79   ~ 0
+OVERVOLTAGE\nPROTECTION
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:SFH617A-1-Isolator U?
+U 1 1 5D9448DA
+P 11500 7000
+F 0 "U?" H 11500 7233 50  0001 C CNN
+F 1 "SFH617A-1" H 11500 7234 50  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 11300 6800 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 11500 7000 50  0001 L CNN
+	1    11500 7000
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line width 8 style solid
+	10850 7850 10850 8900
+Wire Notes Line width 8 style solid
+	10850 8900 12150 8900
+Wire Notes Line width 8 style solid
+	12150 8900 12150 7850
+Wire Notes Line width 8 style solid
+	12150 7850 10850 7850
+Text Notes 11100 8200 0    79   ~ 0
+POWER PANIC
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:SFH617A-1-Isolator U?
+U 1 1 5D9472BE
+P 11500 8500
+F 0 "U?" H 11500 8733 50  0001 C CNN
+F 1 "SFH617A-1" H 11500 8734 50  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 11300 8300 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 11500 8500 50  0001 L CNN
+	1    11500 8500
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	5150 2350 5600 2350
+Wire Notes Line
+	5150 2900 5600 2900
+Wire Notes Line
+	6900 2350 7350 2350
+Wire Notes Line width 8 style solid
+	7350 2100 7350 3150
+Wire Notes Line
+	6900 2900 7350 2900
+Wire Notes Line
+	8650 2350 9100 2350
+Wire Notes Line
+	8650 2900 9100 2900
+Wire Notes Line
+	8000 3150 8000 4100
+Wire Notes Line
+	9450 3600 9450 3150
+Wire Notes Line
+	10050 3600 10050 3150
+Wire Notes Line
+	10400 2900 10850 2900
+Wire Notes Line
+	10400 2350 10850 2350
+Wire Notes Line
+	12150 2350 14700 2350
+Wire Notes Line
+	12150 2900 14700 2900
+Wire Notes Line
+	12150 3900 12600 3900
+Wire Notes Line
+	12150 5600 12850 5600
+Wire Notes Line
+	12150 6600 12600 6600
+Wire Notes Line
+	12600 2350 12600 6600
+Wire Notes Line
+	12850 7150 12150 7150
+Wire Notes Line
+	12850 2900 12850 7150
+Wire Notes Line
+	12150 8100 14650 8100
+Wire Notes Line
+	12150 8650 14650 8650
+Wire Notes Line
+	10850 6600 10050 6600
+Wire Notes Line
+	10050 6600 10050 5900
+Wire Notes Line
+	10850 7150 9450 7150
+Wire Notes Line
+	9450 7150 9450 5900
+Wire Notes Line
+	8650 4650 9100 4650
+Wire Notes Line
+	10400 3950 10850 3950
+Wire Notes Line
+	10850 5600 10400 5600
+Wire Notes Line
+	3850 2350 2050 2350
+Wire Notes Line
+	3850 2900 2050 2900
+Text Notes 2050 2700 0    79   ~ 0
+AC INPUT
+Text Notes 14000 2700 0    79   ~ 0
+DC OUTPUT
+Text Notes 13400 8450 0    79   ~ 0
+POWER PANIC SIGNAL
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R24
+U 1 1 5D970F25
+P 2650 8650
+F 0 "R24" V 2730 8650 50  0000 C CNN
+F 1 "11k" V 2650 8650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2580 8650 50  0001 C CNN
+F 3 "" H 2650 8650 50  0000 C CNN
+	1    2650 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R171
+U 1 1 5D970F2B
+P 4250 9100
+F 0 "R171" V 4330 9100 50  0000 C CNN
+F 1 "33k" V 4250 9100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4180 9100 50  0001 C CNN
+F 3 "" H 4250 9100 50  0000 C CNN
+	1    4250 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R29
+U 1 1 5D970F37
+P 2950 8650
+F 0 "R29" V 3030 8650 50  0000 C CNN
+F 1 "11k" V 2950 8650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2880 8650 50  0001 C CNN
+F 3 "" H 2950 8650 50  0000 C CNN
+	1    2950 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R28
+U 1 1 5D970F3D
+P 2650 9250
+F 0 "R28" V 2730 9250 50  0000 C CNN
+F 1 "11k" V 2650 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2580 9250 50  0001 C CNN
+F 3 "" H 2650 9250 50  0000 C CNN
+	1    2650 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R30
+U 1 1 5D970F43
+P 2950 9250
+F 0 "R30" V 3030 9250 50  0000 C CNN
+F 1 "11k" V 2950 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2880 9250 50  0001 C CNN
+F 3 "" H 2950 9250 50  0000 C CNN
+	1    2950 9250
+	0    -1   -1   0   
+$EndComp
+Text Notes 2250 9050 0    60   ~ 0
+2,1mA/230V\n1,0mA/110V
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:CONN_01X02-power-panic-rescue CN2
+U 1 1 5D970F4B
+P 7200 8750
+F 0 "CN2" H 7200 8600 50  0000 C CNN
+F 1 "AC_FAULT" H 7450 8750 50  0000 C CNN
+F 2 "ok1hra:Pin_1x02-XL" H 7200 8750 50  0001 C CNN
+F 3 "" H 7200 8750 50  0000 C CNN
+F 4 "Molex 70543-0036" H 7500 8500 50  0000 C CNN "MOC"
+	1    7200 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:LTV-354T_-power-panic-rescue IC53
+U 1 1 5D970F51
+P 3550 9000
+F 0 "IC53" H 3340 9190 50  0000 L CNN
+F 1 "EL814S1A" H 3550 9200 50  0000 L CNN
+F 2 "Opto-Devices:Optocoupler_SMD_LTV-817S" H 3350 8800 50  0001 L CIN
+F 3 "" H 3575 9000 50  0000 L CNN
+	1    3550 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R170
+U 1 1 5D970F58
+P 3950 9400
+F 0 "R170" V 4030 9400 50  0000 C CNN
+F 1 "10k" V 3950 9400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 9400 50  0001 C CNN
+F 3 "" H 3950 9400 50  0000 C CNN
+	1    3950 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F5E
+P 3950 9550
+F 0 "#PWR?" H 3950 9300 50  0001 C CNN
+F 1 "GND" H 3950 9400 50  0000 C CNN
+F 2 "" H 3950 9550 50  0000 C CNN
+F 3 "" H 3950 9550 50  0000 C CNN
+	1    3950 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F64
+P 7000 8800
+F 0 "#PWR?" H 7000 8550 50  0001 C CNN
+F 1 "GND" H 7000 8650 50  0000 C CNN
+F 2 "" H 7000 8800 50  0000 C CNN
+F 3 "" H 7000 8800 50  0000 C CNN
+	1    7000 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F6A
+P 6350 9550
+F 0 "#PWR?" H 6350 9300 50  0001 C CNN
+F 1 "GND" H 6350 9400 50  0000 C CNN
+F 2 "" H 6350 9550 50  0000 C CNN
+F 3 "" H 6350 9550 50  0000 C CNN
+	1    6350 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:MOSFET-N-power-panic-rescue Q171
+U 1 1 5D970F70
+P 6350 9000
+F 0 "Q171" H 6134 9066 60  0000 C CNN
+F 1 "2N7002" V 6450 8950 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6370 9000 60  0001 C CNN
+F 3 "" H 6370 9000 60  0000 C CNN
+	1    6350 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F76
+P 5100 9550
+F 0 "#PWR?" H 5100 9300 50  0001 C CNN
+F 1 "GND" H 5100 9400 50  0000 C CNN
+F 2 "" H 5100 9550 50  0000 C CNN
+F 3 "" H 5100 9550 50  0000 C CNN
+	1    5100 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R172
+U 1 1 5D970F7C
+P 5100 9400
+F 0 "R172" V 5180 9400 50  0000 C CNN
+F 1 "100k" V 5100 9400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5030 9400 50  0001 C CNN
+F 3 "" H 5100 9400 50  0000 C CNN
+	1    5100 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:MOSFET-N-power-panic-rescue Q170
+U 1 1 5D970F82
+P 5600 9000
+F 0 "Q170" H 5384 9066 60  0000 C CNN
+F 1 "2N7002" V 5700 9000 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5620 9000 60  0001 C CNN
+F 3 "" H 5620 9000 60  0000 C CNN
+	1    5600 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F88
+P 5600 9550
+F 0 "#PWR?" H 5600 9300 50  0001 C CNN
+F 1 "GND" H 5600 9400 50  0000 C CNN
+F 2 "" H 5600 9550 50  0000 C CNN
+F 3 "" H 5600 9550 50  0000 C CNN
+	1    5600 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R173
+U 1 1 5D970F8E
+P 5250 8600
+F 0 "R173" V 5330 8600 50  0000 C CNN
+F 1 "10k" V 5250 8600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5180 8600 50  0001 C CNN
+F 3 "" H 5250 8600 50  0000 C CNN
+	1    5250 8600
+	0    1    1    0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:D_ALT-Device D1
+U 1 1 5D970F94
+P 6850 8150
+F 0 "D1" H 6850 8250 50  0000 C CNN
+F 1 "BAS316" H 6850 8050 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 6850 8150 50  0001 C CNN
+F 3 "" H 6850 8150 50  0000 C CNN
+	1    6850 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970F9A
+P 6150 8450
+F 0 "#PWR?" H 6150 8200 50  0001 C CNN
+F 1 "GND" H 6150 8300 50  0000 C CNN
+F 2 "" H 6150 8450 50  0000 C CNN
+F 3 "" H 6150 8450 50  0000 C CNN
+	1    6150 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:C-Device C173
+U 1 1 5D970FA0
+P 6750 8950
+F 0 "C173" H 6775 9050 50  0000 L CNN
+F 1 "100n" H 6775 8850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6788 8800 50  0001 C CNN
+F 3 "" H 6750 8950 50  0000 C CNN
+	1    6750 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970FA6
+P 6750 9100
+F 0 "#PWR?" H 6750 8850 50  0001 C CNN
+F 1 "GND" H 6750 8950 50  0000 C CNN
+F 2 "" H 6750 9100 50  0000 C CNN
+F 3 "" H 6750 9100 50  0000 C CNN
+	1    6750 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:C-Device C170
+U 1 1 5D970FAC
+P 4500 9400
+F 0 "C170" H 4525 9500 50  0000 L CNN
+F 1 "220n" H 4525 9300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4538 9250 50  0001 C CNN
+F 3 "" H 4500 9400 50  0000 C CNN
+	1    4500 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970FB2
+P 4500 9550
+F 0 "#PWR?" H 4500 9300 50  0001 C CNN
+F 1 "GND" H 4500 9400 50  0000 C CNN
+F 2 "" H 4500 9550 50  0000 C CNN
+F 3 "" H 4500 9550 50  0000 C CNN
+	1    4500 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:CP_Small-Device C172
+U 1 1 5D970FC4
+P 6400 8350
+F 0 "C172" H 6410 8420 50  0000 L CNN
+F 1 "10u" H 6410 8270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6400 8350 50  0001 C CNN
+F 3 "" H 6400 8350 50  0000 C CNN
+	1    6400 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D970FCA
+P 6400 8450
+F 0 "#PWR?" H 6400 8200 50  0001 C CNN
+F 1 "GND" H 6400 8300 50  0000 C CNN
+F 2 "" H 6400 8450 50  0000 C CNN
+F 3 "" H 6400 8450 50  0000 C CNN
+	1    6400 8450
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 9050 0    60   ~ 0
++5ms
+Text Label 5100 9100 0    60   ~ 0
+RC
+Text Label 6400 8150 0    60   ~ 0
++24V
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:CP_Small-Device C171
+U 1 1 5D970FD3
+P 6150 8350
+F 0 "C171" H 6160 8420 50  0000 L CNN
+F 1 "10u" H 6160 8270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6150 8350 50  0001 C CNN
+F 3 "" H 6150 8350 50  0000 C CNN
+	1    6150 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R22
+U 1 1 5D970FD9
+P 2050 8650
+F 0 "R22" V 2130 8650 50  0000 C CNN
+F 1 "11k" V 2050 8650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1980 8650 50  0001 C CNN
+F 3 "" H 2050 8650 50  0000 C CNN
+	1    2050 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R23
+U 1 1 5D970FDF
+P 2350 8650
+F 0 "R23" V 2430 8650 50  0000 C CNN
+F 1 "11k" V 2350 8650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2280 8650 50  0001 C CNN
+F 3 "" H 2350 8650 50  0000 C CNN
+	1    2350 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R26
+U 1 1 5D970FE5
+P 2050 9250
+F 0 "R26" V 2130 9250 50  0000 C CNN
+F 1 "11k" V 2050 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1980 9250 50  0001 C CNN
+F 3 "" H 2050 9250 50  0000 C CNN
+	1    2050 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R27
+U 1 1 5D970FEB
+P 2350 9250
+F 0 "R27" V 2430 9250 50  0000 C CNN
+F 1 "11k" V 2350 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2280 9250 50  0001 C CNN
+F 3 "" H 2350 9250 50  0000 C CNN
+	1    2350 9250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 8700 6750 8700
+Wire Notes Line
+	3500 9500 3500 9200
+Wire Notes Line
+	3500 8400 3500 8750
+Wire Wire Line
+	3250 9250 3100 9250
+Wire Wire Line
+	3100 8650 3250 8650
+Wire Wire Line
+	3250 9250 3250 9100
+Wire Wire Line
+	3250 8650 3250 8900
+Wire Wire Line
+	3850 9100 3950 9100
+Wire Wire Line
+	5400 8600 5600 8600
+Wire Wire Line
+	5600 8600 5600 8700
+Wire Wire Line
+	5950 8600 5950 9100
+Connection ~ 5600 8600
+Wire Wire Line
+	4400 9100 4500 9100
+Connection ~ 5100 9100
+Connection ~ 3950 9100
+Wire Wire Line
+	5600 9550 5600 9300
+Wire Wire Line
+	6350 9550 6350 9300
+Wire Wire Line
+	5000 8900 3850 8900
+Wire Wire Line
+	5000 8150 5000 8600
+Wire Wire Line
+	5000 8600 5100 8600
+Connection ~ 5000 8600
+Wire Notes Line
+	3700 9200 3700 9850
+Wire Notes Line
+	3700 9850 7200 9850
+Wire Wire Line
+	5000 8150 6150 8150
+Wire Wire Line
+	6150 8250 6150 8150
+Connection ~ 6150 8150
+Wire Notes Line
+	3700 7900 7200 7900
+Wire Notes Line
+	3700 7900 3700 8750
+Connection ~ 6750 8700
+Wire Wire Line
+	4500 9250 4500 9100
+Connection ~ 4500 9100
+Wire Notes Line
+	7200 7900 7200 8000
+Wire Notes Line
+	7200 9850 7200 9100
+Wire Notes Line
+	7200 8300 7200 8650
+Wire Wire Line
+	6400 8250 6400 8150
+Connection ~ 6400 8150
+Wire Notes Line
+	3500 8400 1500 8400
+Wire Notes Line
+	3500 9500 1500 9500
+Wire Notes Line
+	8600 8700 8400 8700
+Wire Notes Line
+	8400 8700 8400 8800
+Wire Notes Line
+	8400 8800 8600 8800
+Wire Notes Line
+	8600 8650 8600 8850
+Wire Notes Line
+	8600 8650 8150 8650
+Wire Notes Line
+	8150 8650 8150 8850
+Wire Notes Line
+	8150 8850 8600 8850
+Wire Notes Line
+	8150 8700 7750 8700
+Wire Notes Line
+	8150 8800 7750 8800
+Wire Notes Line
+	8850 8650 8950 8650
+Wire Notes Line
+	8950 8650 8950 8850
+Wire Notes Line
+	8950 8850 8850 8850
+Wire Notes Line
+	8850 8850 8850 8950
+Wire Notes Line
+	8850 8950 8700 8950
+Wire Notes Line
+	8700 8550 8850 8550
+Wire Notes Line
+	8850 8550 8850 8650
+Wire Notes Line
+	8700 8950 8700 8550
+Text Notes 8750 8900 0    60   ~ 0
+2\n\n1
+Wire Wire Line
+	5600 8600 5950 8600
+Wire Wire Line
+	5100 9100 5200 9100
+Wire Wire Line
+	5100 9100 5100 9250
+Wire Wire Line
+	3950 9100 4100 9100
+Wire Wire Line
+	3950 9100 3950 9250
+Wire Wire Line
+	5000 8600 5000 8900
+Wire Wire Line
+	6150 8150 6400 8150
+Wire Wire Line
+	6750 8700 7000 8700
+Wire Wire Line
+	6750 8700 6750 8800
+Wire Wire Line
+	4500 9100 5100 9100
+Wire Wire Line
+	6400 8150 6700 8150
+Wire Notes Line
+	10850 8100 9450 8100
+Wire Notes Line
+	10850 8650 9450 8650
+Text Notes 9450 8450 0    79   ~ 0
+AC INPUT
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R21
+U 1 1 5D99EB88
+P 1750 8650
+F 0 "R21" V 1830 8650 50  0000 C CNN
+F 1 "11k" V 1750 8650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1680 8650 50  0001 C CNN
+F 3 "" H 1750 8650 50  0000 C CNN
+	1    1750 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Delta_PMZ-24V240WDAL-rescue:R-Device R25
+U 1 1 5D99EF0C
+P 1750 9250
+F 0 "R25" V 1830 9250 50  0000 C CNN
+F 1 "11k" V 1750 9250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1680 9250 50  0001 C CNN
+F 3 "" H 1750 9250 50  0000 C CNN
+	1    1750 9250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 8650 1500 8650
+Wire Wire Line
+	1600 9250 1500 9250
+Wire Wire Line
+	7000 8150 7200 8150
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9AF4C9
+P 7200 8150
+F 0 "#PWR?" H 7200 8000 50  0001 C CNN
+F 1 "VCC" V 7217 8278 50  0000 L CNN
+F 2 "" H 7200 8150 50  0001 C CNN
+F 3 "" H 7200 8150 50  0001 C CNN
+	1    7200 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:LINE #PWR?
+U 1 1 5D9B9FE7
+P 1500 8650
+F 0 "#PWR?" H 1500 8500 50  0001 C CNN
+F 1 "LINE" V 1518 8778 50  0000 L CNN
+F 2 "" H 1500 8650 50  0001 C CNN
+F 3 "" H 1500 8650 50  0001 C CNN
+	1    1500 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:NEUT #PWR?
+U 1 1 5D9BABE1
+P 1500 9250
+F 0 "#PWR?" H 1500 9100 50  0001 C CNN
+F 1 "NEUT" V 1518 9378 50  0000 L CNN
+F 2 "" H 1500 9250 50  0001 C CNN
+F 3 "" H 1500 9250 50  0001 C CNN
+	1    1500 9250
+	0    -1   -1   0   
+$EndComp
+Text Notes 3350 7350 0    118  ~ 24
+POWER PANIC CIRCUITRY
+Text Notes 12550 10350 0    118  ~ 24
+Block schematics + Power panic
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Delta_PMZ-24V240WDAL-rescue)(type Legacy)(uri ${KIPRJMOD}/Delta_PMZ-24V240WDAL-rescue.lib)(options "")(descr ""))
+)
